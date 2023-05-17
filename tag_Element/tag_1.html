@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    span {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div>                                                       <!-- 블록(상자)요소 / 특별한 의미가 없는 구분을 위한 요소 (Division) -->
+    <h1>오늘의 날씨</h1>                                      <!-- 블록(상자)요소 / 제목을 의미하는 요소 (Heading) -->
+    <p>중부 집중호우, 남부는 열대야, 12호 태풍 북상 중..</p>  <!-- 블록(상자)요소 / 문장을 의미하는 요소 (Paragraph) -->
+    <img src="img/weather.jsp" alt="12호 태풍">               <!-- 인라인(글자)요소 / 이미지를 삽입하는 요소 (Image) -->
+  </div>
+
+  <h1>제목1</h1>    <!-- 블록(상자)요소 / 제목을 의미하는 요소 (Heading) - 숫자가 작을수록 더 중요한 제목의 정의 -->
+  <h2>제목2</h2>
+  <h3>제목3</h3>
+  <h4>제목4</h4>
+  <h5>제목5</h5>
+  <h6>제목6</h6>
+
+  <ul>              <!-- 블록(상자)요소 / 순서가 필요없는 목록의 집합을 의미 (Unordered List) -->
+    <li>사과</li>   <!-- 블록(상자)요소 / 목록 내 각 항목 (List Item) -->
+    <li>딸기</li>
+    <li>수박</li>
+    <li>오렌지</li>
+  </ul>
+
+  <a href="https://www.naver.com">NAVER</a>                     <!-- 인라인(글자)요소 / 다른·같은 페이지로 이동하는 하이퍼링크를 지정하는 요소 -->
+  <a href="https://www.google.com" target="_blank">Google</a> 
+
+  <p>
+    <span>동해물</span>과 백두산이 마르고 닳도록                <!-- 인라인(글자)요소 / 특별한 의미가 없는 구분을 위한 요소 -->
+    동해물과 백두산이<br/> 마르고 닳도록                        <!-- 인라인(글자)요소 / 줄바꿈 요소 (Break) -->
+  </p>
+
+  <input type="text" value="HEROPY!" />                         <!-- 인라인(글자)요소 | 블록(상자)요소 / Inline-block / 사용자가 데이터를 입력하는 요소 -->
+  <input type="text" placeholder="이름을 입력하세요!" />        <!-- placeholder : 사용자가 입력할 값(데이터)의 힌트 -->
+  <input type="text" disabled />                                <!-- disabled : 입력 요소 비활성화 -->
+
+  <label>                                                       <!-- 인라인(글자)요소 / 라벨 가능 요소(input)의 제목 -->
+    <input type="checkbox" /> Apple
+  </label>
+  <label>
+    <input type="checkbox" checked /> Banana                    <!-- checked : 체크박스 입력요소 체크됨 -->
+  </label>
+
+  <label>                                                       
+    <input type="radio" name="fruits" /> Apple                  <!-- 사용자에게 체크 여부를 그룹에서 1개만 입력받음 / fruits란 이름의 그룹 -->
+  </label>
+  <label>
+    <input type="radio" name="fruits" /> Banana                 
+  </label>
+
+  <table>                                                       <!-- 테이블 요소 / 표 요소, 행(Row)과 열(Column)의 집합 -->
+    <tr>                                                        <!-- Row가 첫번째 / Column가 두번째 -->
+      <td>A</td><td>B</td>                                      <!-- 열(Column)을 지정하는 요소(Table Data) // 즉, 셀(Cell) -->
+    </tr>
+    <tr>
+      <td>C</td><td>D</td>
+    </tr>
+  </table>
+
+  
+</body>
+</html>
