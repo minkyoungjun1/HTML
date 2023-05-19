@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selector - 2(선택자)</title>
+  <!-- <link rel="stylesheet" href="./css/selector2.css"> -->
+  <link rel="stylesheet" href="./css/selector3.css">
+</head>
+<body>
+  <div class="box" tabindex="-1"></div>
+  <!-- tabindex="-1" : 속성을 통해 Focus가 될 수 있는 요소 만들기
+  Tab키를 사용해 Focus 할 수 있는 순서를 지정하는 속성
+  순서(값)로 -1 이 아닌 다른 값을 넣는것은 논리적 흐름을 방해함-->
+  <a href="https://www.naver.com">NAVER</a>
+  <input type="text" />
+
+  <hr>
+
+  <!-- 가상 클래스 선택자(Pseudo-Classes)  -->
+  <div class="fruits">
+    <span>딸기</span>
+    <span>수박</span>
+    <div>오렌지</div>
+    <p>망고</p>
+    <h3>사과</h3>
+  </div>
+
+  <hr>
+
+  <!-- 가상 요소 선택자(Pseudo-Elements) -->
+  <div class="boxs">
+
+    Content!
+  </div>
+
+  <hr>
+  <!-- 속성 선택자(Attribute) -->
+  <input type="text" value="HEROPY" />
+  <input type="password" value="1234" />
+  <input type="text" value="ABCD" disabled />
+
+  <hr>
+
+  <input type="text" />
+  <input type="password" />
+  <span data-fruit-name="apple">사과</span>
+</body>
+</html>

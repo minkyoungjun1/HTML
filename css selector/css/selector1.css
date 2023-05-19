@@ -1,0 +1,29 @@
+/* 일치 선택자 */
+/* 선택자 span과 .orange를 동시에 만족하는 요소선택 */
+/* span.orange {
+  color: red;
+} */
+
+/* 자식 선택자 */
+/* 선택자 ul과 자식요소 .orange 선택 */
+/* ul > .orange {
+  color: red;
+} */
+
+/* 하위(후손)선택자 */
+/* 선택자 div의 하위요소 .orange 선택 */
+div .orange {
+  color: red;
+}
+
+/* 인접 형제 선택자 */
+/* 선택자 .banana 다음 형제요소 li 하나를 선택 */
+/* .banana + li {
+  color: red;
+} */
+
+/* 일반 형제 선택자 */
+/* 선택자 .orange 다음 형제요소 li 모두를 선택 */
+.banana ~ li {
+  color: red;
+}

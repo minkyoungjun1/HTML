@@ -1,0 +1,92 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transition: 1s;
+}
+
+.box:focus {
+  width: 300px;
+  background-color: royalblue;
+}
+
+/* ------------------------------------------ */
+/* 가상 클래스 선택자(Pseudo-Classes) */
+/* Hover
+ - 선택자 a 요소에 마우스 커서가 올라가 있는 동안 선택 */
+/* a:hover {
+  color: red;
+} */
+
+/* Active
+ - 선택자 a 요소에 마우스를 클릭하고 있는 동안 선택
+ */
+/* a:active {
+  color: red;
+} */
+
+/* Focus
+ - 선택자 input 요소가 포커스되면 선택 */
+
+/* input {
+
+}
+
+input:focus {
+  background-color: orange;
+} */
+
+/* first-child
+- 선택자 span이 형제요소 중 첫째라면 선택 */
+/* .fruits span:first-child {
+  color: red;
+} */
+
+/* last-child
+- 선택자 h3이 형제요소 중 막내라면 선택 */
+/* .fruits h3:last-child {
+  color: red;
+} */
+
+/* nth-child(n)
+- 선택자 모든것 중에 2개째라면 선택*/
+/* .fruits *:nth-child(2n) {
+  color: red;
+} */
+
+/* not(요소명) 
+- 선택자 span이 아닌 모든것 선택*/
+/* .fruits *:not(span) {
+  color: red;
+} */
+
+/* ------------------------------------------ */
+/* 가상 요소 선택자(Pseudo-Elements) */
+/* $ ABC::before - 선택자 ABC 요소의 내부 앞에 내용(Content)을 삽입 */
+.boxs::before {
+  content: "앞!";
+}
+
+/* $ ABC::after - 선택자 ABC 요소의 내부 뒤에 내용(Content)을 삽입 */
+.boxs::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: royalblue;
+}
+
+/* ------------------------------------------ */
+/* 속성 선택자(Attribute) */
+/* $ [disabled] : disabled를 포함한 요소 선택 */
+/* [disabled] {
+  color: red;
+}
+
+[type] {
+  color: red;
+} */
+
+/* [type="password"] {
+  color: red;
+} */
